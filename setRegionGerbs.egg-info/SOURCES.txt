@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setRegionGerbs.py
+setup.py
+setRegionGerbs.egg-info/PKG-INFO
+setRegionGerbs.egg-info/SOURCES.txt
+setRegionGerbs.egg-info/dependency_links.txt
+setRegionGerbs.egg-info/requires.txt
+setRegionGerbs.egg-info/top_level.txt

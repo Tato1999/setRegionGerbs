@@ -1,0 +1,62 @@
+Metadata-Version: 2.2
+Name: setRegionGerbs
+Version: 0.1.0
+Summary: A module to download region flags (gerbs) based on ISO codes
+Home-page: https://github.com/Tato1999
+Author: Tarieli Tabatadze
+Author-email: tato.tabatadze.1999@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# setRegionGerbs
+
+A Python module for downloading region-specific flags (gerbs) from the Flag CDN and saving them to a local directory.
+
+## Installation
+
+To install this module, you can use `pip`:
+
+### Using `pip`:
+
+If you're not using Poetry, you can install the module from PyPI using `pip`:
+
+```bash
+pip install setRegionGerbs
+
+Install from source:
+
+If you want to install directly from source, clone the repository and run:
+
+git clone https://github.com/Tato1999/setRegionGerbs.git
+cd setRegionGerbs
+python3 setup.py install
+
+
+from setRegionGerbs import setRegionGerbs
+
+# Create an instance of the setRegionGerbs class
+gerbs = setRegionGerbs()
+
+# Call the makeDir method to create the necessary directory and start the download process
+gerbs.makeDir()
+
+# The flags for the specified regions will be downloaded and saved in the 'gerb_folder' directory.
+
+
+gerbs.regIso = ['us', 'de', 'fr']  # ISO country codes
+gerbs.formatType = 'png'           # Format type for the flags (e.g., 'png', 'jpg')
+gerbs.makeDir()                    # Start the process
